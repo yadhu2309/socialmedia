@@ -139,8 +139,8 @@ CHANNEL_LAYERS = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mediaDB',
-        'USER':'postgres',
+        'NAME': 'mediadb',
+        'USER':'admin',
         'PASSWORD':'admin',
         'HOST':'localhost'
     }
@@ -194,8 +194,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'user.User'
 
-CORS_ALLOW_ALL_ORIGINS = True
-# CORS_ORIGIN_ALLOW_ALL = True
+# CORS_ALLOW_ALL_ORIGINS = True
+CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 # CORS_ORIGIN_WHITELIST = (
 #     'https://main.d3qvjh9eluu3ty.amplifyapp.com/',
