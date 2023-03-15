@@ -59,8 +59,8 @@ class MentorSerializer(serializers.ModelSerializer):
     def get_profile(self,obj):
         if ProfileImage.objects.filter(uid=obj.id):
             data = ProfileImage.objects.get(uid=obj.id)
-            print('mentor profile',data.dp)
-            return str(data.dp)
+            # print('mentor profile',data.dp)
+            return data.dp.url
 
 class ProfileImageSerializer(serializers.ModelSerializer):
     verified = serializers.SerializerMethodField()
