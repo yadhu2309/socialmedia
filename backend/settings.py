@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-mija5o5)dmep%(%%=99(muq+-^3z3&c6j4j#(so$i57!2dd8nw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -194,11 +194,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'user.User'
 
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_ALL_ORIGINS = True
+# CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
-CORS_ORIGIN_WHITELIST = (
-  'http://localhost:3000',
-)
+# CORS_ORIGIN_WHITELIST = (
+#     'https://main.d3qvjh9eluu3ty.amplifyapp.com/',
+# #   'http://localhost:3000',
+# )
 
 #s3 Bucket
 AWS_ACCESS_KEY_ID = 'AKIAQH4DPFV32TUNPKVP'

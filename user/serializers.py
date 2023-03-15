@@ -204,13 +204,13 @@ class SavedSerializer(serializers.ModelSerializer):
     def get_image(self,obj):
        
         
-        return str(obj.pid.image)
+        return obj.pid.image.url
     def get_title(self,obj):
         return str(obj.pid.title)
     def get_profile(self,obj):
         if ProfileImage.objects.filter(uid=obj.user_who_own):
             d=ProfileImage.objects.get(uid=obj.user_who_own)
-            return str(d.dp)
+            return d.dp.url
     
             # return str(data.image)
 
