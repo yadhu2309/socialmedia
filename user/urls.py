@@ -1,7 +1,7 @@
 from django.urls import path,include
 from . import views
 
-import notifications.urls
+# import notifications.urls
 
 from .views import MyTokenObtainPairView
 from rest_framework import routers
