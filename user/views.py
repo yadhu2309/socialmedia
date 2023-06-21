@@ -35,19 +35,21 @@ class MyTokenObtainPairView(TokenObtainPairView):
 def userSignup(request):
 
     if request.method == 'POST':
-        print('say helo')
+        # print('say helo')
         print(request.data)
 
         if User.objects.filter(Q(username=request.data['username']) | Q(phone=request.data['phone']) ):
-            print('useralread')
+            # print('useralread')
             return Response(data={'error':'user is already exist'},status=409)
         serializer = UserSerializers(data=request.data,partial=True)
-        print(serializer.is_valid())
-        print(serializer.errors)
+        # print(serializer.is_valid())
+        # print(serializer.errors)
         if serializer.is_valid():
             
             serializer.save()
-            return Response(serializer.data,status=201)
+            return Response(serializer.data, status=201)
+        else:
+            return Response(serializer.errors, status=400)
     return Response(serializer.errors,status=400)
 
 #google signin
