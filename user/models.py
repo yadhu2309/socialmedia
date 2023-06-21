@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
-from notifications.signals import notify
+# from notifications.signals import notify
 from django.db.models.signals import post_save
 from channels.layers import get_channel_layer
 from asgiref.sync import async_to_sync
