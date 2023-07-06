@@ -105,3 +105,7 @@ class Notification(models.Model):
     created_at =  models.DateTimeField(auto_now_add=True)
     is_seen = models.BooleanField(default=False)
     roomid = models.ForeignKey(Rooms,related_name='roomid',on_delete=models.CASCADE)
+
+
+
+
