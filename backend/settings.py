@@ -199,8 +199,8 @@ CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_WHITELIST = (
     # 'https://main.d3qvjh9eluu3ty.amplifyapp.com/',
-#    'http://localhost:3000',
-"https://main.dpihnh8vlosnb.amplifyapp.com/"
+   'http://localhost:3000',
+# "https://main.dpihnh8vlosnb.amplifyapp.com/"
 )
 
 #s3 Bucket
