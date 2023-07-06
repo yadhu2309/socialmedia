@@ -194,24 +194,24 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'user.User'
 
-CORS_ALLOW_ALL_ORIGINS = True
-CORS_ORIGIN_ALLOW_ALL = True
-CORS_ALLOW_CREDENTIALS = True
-CORS_ORIGIN_WHITELIST = (
-    # 'https://main.d3qvjh9eluu3ty.amplifyapp.com/',
-   'http://localhost:3000',
-# "https://main.dpihnh8vlosnb.amplifyapp.com/"
-)
+# CORS_ALLOW_ALL_ORIGINS = True
+# CORS_ORIGIN_ALLOW_ALL = True
+# CORS_ALLOW_CREDENTIALS = True
+# CORS_ORIGIN_WHITELIST = (
+#     # 'https://main.d3qvjh9eluu3ty.amplifyapp.com/',
+#    'http://localhost:3000',
+# # "https://main.dpihnh8vlosnb.amplifyapp.com/"
+# )
 
 #s3 Bucket
 
-AWS_ACCESS_KEY_ID = 'AKIAWPOYYS3S4IZSJCMH'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'smediabackend'
+# AWS_ACCESS_KEY_ID = 'AKIAWPOYYS3S4IZSJCMH'
+# AWS_SECRET_ACCESS_KEY = '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'
+# AWS_STORAGE_BUCKET_NAME = 'smediabackend'
 
-AWS_S3_FILE_OVERWRITE = False
-AWS_DEFAULT_ACL = None
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
+# AWS_S3_FILE_OVERWRITE = False
+# AWS_DEFAULT_ACL = None
+# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+# STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
 
 
